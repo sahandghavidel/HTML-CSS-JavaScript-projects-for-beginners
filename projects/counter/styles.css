@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.value {
+  font-size: 6rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blurred Background Popup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to our website</h1>
+      <button class="btn">Click to join</button>
+    </div>
+    <div class="popup-container active">
+      <h4>20% OFF Offer</h4>
+      <label for="email">Your Email</label>
+      <input
+        type="email"
+        name="email"
+        class="input"
+        placeholder="Enter Your Email"
+      />
+      <button class="popup-btn">Join</button>
+      <div class="close-icon">
+        <i class="fas fa-times fa-2x"></i>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
