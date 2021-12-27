@@ -1,4 +1,4 @@
-# 10-HTML-CSS-JavaScript-projects-for-beginners
+# HTML-CSS-JavaScript-projects-for-beginners
 
 This is the source code of the YouTube video https://www.youtube.com/watch?v=ePzOFu2xXUQ.
 
