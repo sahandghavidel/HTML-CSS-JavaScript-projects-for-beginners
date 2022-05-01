@@ -1,8 +1,8 @@
 # HTML-CSS-JavaScript-projects-for-beginners
 
-This is the source code of the YouTube video https://www.youtube.com/watch?v=ePzOFu2xXUQ.
+This is the source code of the YouTube video (10 projects) https://www.youtube.com/watch?v=ePzOFu2xXUQ.
 
-The full udemy course is available here: https://www.udemy.com/course/html-css-javascript-complete-course/?referralCode=BF8252632FBD3C06A3DF
+Part 2 (16 projects) : https://youtu.be/EWv2jnhZErc
 
 NEW HTML CSS JavaScript Projects    Interesting HTML CSS JavaScript projects    Learn HTML, CSS, and JavaScript 2021 to create modern websites.    Fun learning HTML, CSS, and JavaScript!    
 
