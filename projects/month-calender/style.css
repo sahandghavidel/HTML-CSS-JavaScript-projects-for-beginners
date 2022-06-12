@@ -1,97 +1,87 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  background-color: salmon;
-  color: lightgray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.calendar {
-  width: 450px;
-  height: 520px;
-  background-color: black;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+.calender{
+    background-color: black;
+    color: lightgray;
+    width: 450px;
+    height: 520px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .4);
 }
 
-.month {
-  width: 100%;
-  height: 120px;
-  background-color: lightseagreen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
+.month{
+    width: 100%;
+    height: 120px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
-.month i {
-  font-size: 25px;
-  cursor: pointer;
+.month h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
-.month h1 {
-  font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1px;
+.month p{
+    font-size: 16px;
 }
 
-.month p {
-  font-size: 16px;
-
+.weekdays{
+    width: 100%;
+    height: 50px;
+    display: flex;
 }
 
-.weekdays {
-  width: 100%;
-  height: 50px;
-  display: flex;
+.weekdays div{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.weekdays div {
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
 }
 
-.days {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2px;
+.days div{
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.days div {
-  font-size: 14px;
-  margin: 3px;
-  width: 57.5px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.days div:hover:not(.empty){
+    border: 2px solid gray;
+    cursor: pointer;
 }
 
-.days div:hover:not(.empty) {
-  border: 2px solid gray;
-  cursor: pointer;
-}
-
-.today {
-  background-color: lightseagreen;
-
+.today{
+    background-color: lightseagreen;
 }
