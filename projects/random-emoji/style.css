@@ -1,51 +1,41 @@
-
-body {
-  font-family:'Courier New', Courier, monospace;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: salmon;
+body{
+    padding: 0;
+    margin: 0;
+    background: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-h2 {
-  position: absolute;
-  top: 0;
-  padding-top: 140px;
-  color: white;
-  font-size: 2rem;
-  text-align: center;
+h2{
+    font-size: 2rem;
+    color: aliceblue;
 }
 
 .section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
 }
 
-
-.emoji-btn {
-  border: none;
-  font-size: 5rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  filter: grayscale();
-  padding: 15px;
-  transition: filter 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.emoji-btn:hover {
-  filter: grayscale(0);
+.btn{
+    font-size: 5rem;
+    border: none;
+    background: rgb(255,255,255,.2);
+    border-radius: 10px;
+    padding: 15px;
+    filter: grayscale();
+    transition: filter .2s ease-in-out;
+    cursor: pointer;
 
 }
 
-.emoji-name {
-font-weight: 600;
-  color: darkblue;
-
+.btn:hover{
+    filter: grayscale(0);
 }
 
+.emoji-name{
+    font-weight: 600;
+    color: darkblue;
+}

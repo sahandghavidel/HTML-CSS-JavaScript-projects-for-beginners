@@ -1,27 +1,27 @@
-const btnEl = document.getElementById("emoji-btn");
+const btnEl = document.getElementById("btn");
 const emojiNameEl = document.getElementById("emoji-name");
 
-const emojis = [];
+const emoji = [];
 
-const emojiAddFunction = async () => {
+async function getEmoji() {
   let response = await fetch(
-    "https://emoji-api.com/emojis?access_key=c026368c7be293ca27c373a38b0d4361494d257d"
+    "https://emoji-api.com/emojis?access_key=773b58f681fb786fafdb8392e8b8a75ddc177fd1"
   );
+
   data = await response.json();
-  console.log(data);
 
   for (let i = 0; i < 1500; i++) {
-    emojis.push({
-      name: data[i].unicodeName,
-      character: data[i].character,
+    emoji.push({
+      emojiName: data[i].character,
+      emojiCode: data[i].unicodeName,
     });
   }
-};
+}
 
-emojiAddFunction();
+getEmoji();
 
 btnEl.addEventListener("click", () => {
-  const randomNum = Math.floor(Math.random() * emojis.length);
-  btnEl.innerText = emojis[randomNum].character;
-  emojiNameEl.innerText = emojis[randomNum].name;
+  const randomNum = Math.floor(Math.random() * emoji.length);
+  btnEl.innerText = emoji[randomNum].emojiName;
+  emojiNameEl.innerText = emoji[randomNum].emojiCode;
 });
