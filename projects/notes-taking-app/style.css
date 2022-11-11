@@ -1,0 +1,85 @@
+:root {
+  --bg: #19172e;
+  --btn: #9c528b;
+  --card: #b9929f;
+}
+* {
+  font-family: sans-serif;
+  transition: 0.5s ease;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+  font-size: 2rem !important;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 50px;
+  gap: 40px;
+}
+
+.note {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 17px;
+  border-radius: 15px;
+  resize: none;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  font-family: monospace;
+  font-size: 18px;
+  color: var(--bg);
+  font-weight: 800;
+  border: none;
+  outline: none;
+  background: var(--card);
+}
+
+.add-note {
+  height: 200px;
+  border: none;
+  outline: none;
+  background: rgba(156, 82, 139, 0.27);
+  border-radius: 15px;
+  font-size: 70px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.add-note:hover {
+  background: rgba(156, 82, 139, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+::placeholder {
+  color: rgb(214, 214, 214);
+}
+
+footer,
+a {
+  color: rgb(214, 214, 214);
+  font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    line-height: 4vh;
+}

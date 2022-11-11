@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 158, 156);
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 420px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 28px 28px;
+}
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper .search {
+    margin: 35px 0 18px;
+    position: relative;
+}
+.search input {
+    height: 53px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 42px;
+}
+.search :where(i, span) {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+.search input::placeholder{
+    color: #b8b8b8;
+}
+.search input:focus{
+    border: 2px solid #4d59fb;
+    padding: 0 41px;
+}
+.search i {
+    left: 18px;
+    font-size: 16px;
+    pointer-events: none;
+}
+.search  input:focus  ~ i {
+    color: #4d59fb;
+}
+.search span {
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+.search input:valid ~ span {
+    display: block;
+}
+.wrapper ul li{
+    display: flex;
+    margin-bottom: 14px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+}
+ul .word p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.wrapper .info-text {
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: -3px 0 -10px;
+}
+.wrapper ul {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+ul .word i {
+    cursor: pointer;
+    font-size: 15px;
+    color: #999;
+}
+ul li:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+.content li .details{
+    border-left: 3px solid #4d59fb;
+    border-radius: 4px 0 0 4px;
+    padding-left: 10px;
+}
+.content li .details p {
+    font-size: 17px;
+    color: #7e7e7e;
+}
+.synonyms .details .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.synonyms .details .list span {
+    margin-right: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.info-text span{
+    font-weight: 500;
+}
+.wrapper.active ul {
+    height: 303px;
+    opacity: 1;
+}
+.wrapper.active ul{
+    display: block;
+}
+.wrapper.active .info-text {
+    display: none;
+}
+ul .content {
+    max-height: 215px;
+    overflow-y: auto;
+}
+ul .content::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

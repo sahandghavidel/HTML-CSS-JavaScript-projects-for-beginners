@@ -1,0 +1,32 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#loancal {
+   padding: 20px;
+   border-radius: 10px;
+    background-color:darkcyan;
+    color: aliceblue;
+}
+
+#months, #amount, #interest_rate{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+#interest_rate {
+    margin-left: 2px;
+}
+
+h1 {
+    font-size:40px;
+}

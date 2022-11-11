@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  text-align: center;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center; 
+  flex-wrap: wrap;
+ 
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#errorBox{
+  color: crimson;
+}
+  
+.gallery img {
+    width: 18vw;
+    height: 18vh;
+    object-fit: cover;
+  } 
+
+.inp-box{
+  text-transform: uppercase;
+  width: 250px;
+  height: 45px;
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: white;
+  transition: all 300ms ease;
+}
+.btn {
+  text-transform: uppercase;
+  width: 250px;
+  height: 45px;
+  outline: none;
+  border: none;
+  margin: 20px 0;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #5c1ed5;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+footer {
+  color: pink;
+  font-size: 1rem;
+  padding: 22px;
+  line-height: 3vh;
+  margin-top: 30px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:visited {
+  color: inherit;
+}

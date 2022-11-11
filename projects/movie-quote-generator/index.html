@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Movie/TV Series Quote Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <p class="heading">Movie Quote Generator<p>
+        </br>
+        <!-- Quote Container -->
+        <div class="container">
+             <!-- Quote to be Displayed Here -->
+            <h1>
+            <i class="fa fa-quote-left" style="color: #19172e"></i>
+            <span id="quote"></span>
+            <i class="fa fa-quote-right" style="color: #19172e"></i>
+            </h1>
+            <!-- Author to be Displayed Here -->
+            <p id="author"></p>
+            <!-- TV Show / Movie Name to be Displayed Here -->
+            <p id="source"></p>
+            <hr/>
+            <div class="buttons">
+              
+
+                <!--Add an onclick event on 'next quote' button. Upon the click of a button, a new random quote is generated-->
+                <button class="next" onclick="getNextQuote()">Next quote</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+</body>
+</html>

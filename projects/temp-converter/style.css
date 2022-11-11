@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #19172e;
+    height: 100vh;
+    font-family: monospace;
+    font-size: 1.25rem;
+    color: white;
+}
+section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+.heading{
+    height: 58px;
+    line-height: 58px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 15px;
+    background: #f9f8fa75;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px rgba(197, 193, 193, 0.185);
+    margin-bottom: 28px;
+}
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#f9f8fa75;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px rgba(197, 193, 193, 0.185);
+}
+.box{
+    width: 90%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.input_box{
+    width: 14rem;
+    font-family: monospace;
+    padding: 5px;
+    float: right;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.25rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #000002; 
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    line-height: 4vh;
+}
+a{
+    color: rgba(255, 255, 255, 0.383);
+}
+::placeholder{
+    color: rgb(173, 169, 169);
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .main{
+        width: 87%;
+    }
+    .heading{
+        font-size: 1.5rem;
+    }
+    .container{
+        padding-bottom: 35px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;  
+        width: 100%;
+        margin-top: 13px;
+    }
+    .input_box{
+        width: 90%;
+        padding: 3px;
+        font-size: 1.25rem;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .main{
+        width: 92%;
+    }
+    .heading{
+        font-size: 1.22rem;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 10px
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: black;
+  background: #3498DB;
+}
+
+h1 {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.fa-code {
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+}
+
+.title {
+  font-weight: 600;
+  color: white;
+  font-size: 54px;
+  padding: 0 16px;
+}
+
+#generate-project {
+  padding: 15px 40px;
+  background: none;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#generate-project:hover {
+  background: white;
+}
+
+#give-idea {
+  padding: 10px 20px;
+  background: none;
+  border: 3px solid white;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fa-github {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#give-idea:hover {
+  background: white;
+}
+
+#new-project {
+  margin-top: 20px;
+  font-size: 44px;
+}
+
+#project-generation {
+  font-size: 50px;
+}
+
+#project-generation span {
+  margin-top: 70px;
+}
+
+ul li {
+  list-style-type: none;
+}
