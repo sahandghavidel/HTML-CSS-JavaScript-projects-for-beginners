@@ -1,9 +1,12 @@
-function computeLoan() {
-  const amount = document.querySelector("#amount").value;
-  const interest_rate = document.querySelector("#interest_rate").value;
-  const months = document.querySelector("#months").value;
-  const interest = (amount * (interest_rate * 0.01)) / months;
-  const payment = (amount / months + interest).toFixed(2);
+function calculateLoan() {
+    const amount = document.getElementById("amount").value
+    const interest_rate = document.getElementById("interest_rate").value
+    const months = document.getElementById("months").value
+    const interest = (amount * (interest_rate * .01)) / months
 
-  document.querySelector("#payment").innerHTML = `Monthly Payment = ${payment}`;
+    const payment = (amount / months + interest).toFixed(2)
+
+    document.getElementById("payment").innerHTML = `monthly payment: ${payment}`
+
+
 }
