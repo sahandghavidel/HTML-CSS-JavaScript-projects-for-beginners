@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loan calculator</title>
+    <title>Loan Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>loan calculator</h1>
-        <p>loan amount $
-            <input onchange="calculateLoan()" class="input"  type="number" id="amount" min="1" max="500000">
+        <h1>Loan Calculator</h1>
+        <p>Loan Amount $
+            <input onchange="calculateLoan()" class="input" type="number" id="loan-amount" min="1" max="500000" value="10000">
         </p>
-        <p>interest rate % <input onchange="calculateLoan()" class="input" type="number" id="interest_rate" min="0" max="100"  step=".1">
+        <p>Interest Rate %
+            <input onchange="calculateLoan()" class="input" type="number" id="interest-rate" min="0" max="100" value="10" step=".1">
         </p>
-        <p>month to pay
-            <input onchange="calculateLoan()" class="input" type="number" id="months" min="1" max="500000">
+        <p>Months to pay
+            <input onchange="calculateLoan()" class="input" type="number" id="months-to-pay" min="6" max="48" value="12">
         </p>
-        <p id="payment">monthly payment: </p>
+        <p class="payment" id="payment">Monthly Payment:</p>
     </div>
+
     <script src="index.js"></script>
 </body>
-</html>
+</html> 
