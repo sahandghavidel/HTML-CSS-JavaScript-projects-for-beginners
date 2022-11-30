@@ -1,88 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-* {
-  box-sizing: border-box;
-}
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  background: linear-gradient(to right, #00afff, #00ff6c);
+  margin: 0;
+  background: linear-gradient(to right, lightblue, yellow);
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  font-family:'Courier New', Courier, monospace;
 }
 
-.main-container {
-  background-color: rgba(255, 255, 255, 0.863);
+.container {
+  background-color: aliceblue;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   padding: 10px;
-  max-width: 100%;
-  width: 800px;
-}
-
-.anime-container h3 {
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: capitalize;
-  padding-bottom: 10px;
-  letter-spacing: 0.9px;
-}
-
-.anime-container h2 {
-  line-height: 30px;
-  word-spacing: 1px;
-  margin-bottom: 30px;
-  position: relative;
+  width: 450px;
+  margin: 5px;
 }
 
 .get-anime {
   margin-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.774);
-  color: #fff;
+  background-color: green;
+  color: aliceblue;
   padding: 10px 30px;
-  border: none;
   border-radius: 6px;
-  outline: none;
   font-size: 16px;
-  font-weight: 200;
   cursor: pointer;
-  letter-spacing: 1px;
 }
 
-.anime-box {
+.get-anime:disabled{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.anime-container {
+  /* display: none; */
   display: none;
 }
 
-.anime-box img {
+.anime-container img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  border: 10px solid #005da3;
-  align-items: center;
+  border: 3px solid green;
 }
 
-.hero-name {
-  margin-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.774);
-  color: #fff;
-  padding: 10px 30px;
-  border: none;
+.anime-name{
+  margin: 20px;
+  background-color: green;
+  color: aliceblue;
+  padding: 10px;
   border-radius: 6px;
-  outline: none;
   font-size: 17px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 500px) {
-  .main-container {
-    width: 450px;
-    flex-wrap: wrap;
-  }
+  font-weight: 600;
 }
