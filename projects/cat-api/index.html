@@ -5,21 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Getting Started with APIs</title>
+    <title>Get Random Photos</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Getting Started with APIs</h1>
+      <h1>Get Random Photos</h1>
 
-      <h2>Enter the number of kitties</h2>
-      <input type="text" class="inp-box" id="inp-box" />
-      <small id="errorBox"></small>
+      <h2>Enter the number of photos</h2>
+      <input
+        type="number"
+        class="input"
+        value="2"
+        min="1"
+        max="10"
+        id="input"
+      />
+      <small class="errorMessage" id="errorMessage">Error message</small>
 
-      <button id="btn_generate" class="btn">Display</button>
+      <button id="btn" class="btn">Get photos</button>
 
-      <div id="gallery" class="gallery"></div>
+      <div id="gallery" class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="image"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="image"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="image"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="image"
+        />
+      </div>
     </div>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
