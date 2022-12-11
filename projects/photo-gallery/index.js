@@ -1,53 +1,48 @@
-const galleryEl = document.getElementById("gallery");
-const errorMessageEl = document.getElementById("errorMessage");
 const btnEl = document.getElementById("btn");
+const errorMessageEl = document.getElementById("errorMessage");
+const galleryEl = document.getElementById("gallery");
 
-async function loadImage() {
+async function fetchImage() {
   const inputValue = document.getElementById("input").value;
+
   if (inputValue > 10 || inputValue < 1) {
     errorMessageEl.style.display = "block";
-    errorMessageEl.innerHTML = "Number should be between 1 and 10";
-
+    errorMessageEl.innerText = "Number should be between 0 and 11";
     return;
   }
 
-  let images = "";
+  imgs = "";
 
   try {
     btnEl.style.display = "none";
-    loading = `<img
-    src="spinner.svg"
-    alt="image"
-  />`;
-
+    const loading = `<img src="spinner.svg" />`;
     galleryEl.innerHTML = loading;
-
     await fetch(
-      `https://api.unsplash.com/photos?per_page=${inputValue}&query=office&page=${Math.round(
+      `https://api.unsplash.com/photos?per_page=${inputValue}&page=${Math.round(
         Math.random() * 1000
-      )}&client_id=2zo4prpSQRMCG-gokmZT4sGe9hIAkcbdiTct1dnRzAY`
-    )
-      .then((res) => res.json())
-      .then((data) => {
+      )}&client_id=B8S3zB8gCPVCvzpAhCRdfXg_aki8PZM_q5pAyzDUvlc`
+    ).then((res) =>
+      res.json().then((data) => {
         if (data) {
-          errorMessageEl.style.display = "none";
           data.forEach((pic) => {
-            images += `
-         <img src=${pic.urls.small} alt="cat" />
-         `;
+            imgs += `
+            <img src=${pic.urls.small} alt="image"/>
+            `;
+            galleryEl.style.display = "block";
+            galleryEl.innerHTML = imgs;
+            btnEl.style.display = "block";
+            errorMessageEl.style.display = "none";
           });
-          galleryEl.style.display = "block";
-          galleryEl.innerHTML = images;
         }
-      });
-
-    btnEl.style.display = "block";
+      })
+    );
   } catch (error) {
     console.log(error);
     errorMessageEl.style.display = "block";
-    errorMessageEl.innerHTML = "An error happened, please try again later";
+    errorMessageEl.innerHTML = "An error happened, try again later";
     btnEl.style.display = "block";
+    galleryEl.style.display = "none";
   }
 }
 
-btnEl.addEventListener("click", loadImage);
+btnEl.addEventListener("click", fetchImage);
