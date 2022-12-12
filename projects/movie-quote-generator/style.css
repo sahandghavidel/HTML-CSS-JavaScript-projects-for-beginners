@@ -1,129 +1,61 @@
-*{ 
-   margin: 0; 
-   padding: 0; 
-   box-sizing: border-box; 
-  } 
-
-body { 
-   display: flex; 
-   justify-content: center; 
-   align-items: center; 
-   min-height: 100vh; 
-   background-color: #19172e; 
-   font-family: "Garamond", serif;
-   transition-timing-function: ease-in;
-   transition: 0.7s;
-   }
-   
-#quote {
-   text-align: center;
-   font-size: 40px;
-   font-weight: bold;
-   color: white;
-}
-
-#author {
-   margin: 10px;
-   text-align: right;
-   font-size: 25px;
-   font-style: italic;
-   font-family: "Garamond", serif;
-   color: #19172e;
-}
-
-#source {
-   margin: 10px;
-   text-align: right;
-   font-size: 25px;
-   font-weight: 700;
-   font-family: "Garamond", serif;
-   color: #19172e
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, lightgreen, lightblue);
+  color: black;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 15px;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 10px;
+  text-align: center;
 }
 
-
-.buttons {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 9px;
-  
+.heading {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
 }
 
-#tweet {
-    border: solid rgb(102, 179, 255);
-    border-radius: 4px;
-    background-color: rgb(102, 179, 255);
-    color: white;
-    text-align: center;
-    font-size: 1.8em;
-    width: 60px;
-    height: 35px;
-    line-height: 40px;
-
+.quote {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-#whatsapp {
-    border: solid #25D366;
-    border-radius: 4px;
-    background-color: #25D366;
-    color: white;
-    text-align: center;
-    font-size: 1.8em;
-    width: 60px;
-    height: 35px;
-    line-height: 40px;
-
+.author {
+  margin: 10px;
+  text-align: right;
+  font-size: 25px;
+  font-style: italic;
 }
 
-footer {
-
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 0px;
-    padding: 5px;
-    line-height: 3vh;
-    font-family: "Roboto", sans-serif;
+.btn {
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  width: 300px;
+  color: black;
+  text-transform: uppercase;
 }
 
-.heading{
-    font-family: "Roboto", sans-serif;
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 100px;
-    line-height: 3vh;
-}
-
-.container:hover {
-    box-shadow: 0 10px 10px rgb(0, 0, 0);
-}
-
-.next {
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 5px;
-    font-weight: bold;
-    color: white;
-    background-image: linear-gradient(to right bottom, rgb(230, 100, 0), #ffedbca8);
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: green;
+  transition: all 300ms ease-in-out;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
