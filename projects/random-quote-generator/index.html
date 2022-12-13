@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quote Generator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- Quote Container -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-      <!-- Quote to be Displayed Here -->
-      <h1 class="heading">Random Quote Generator</h1>
+        <h1 class="heading">Random Quote Generator</h1>
+        <h2 class="quote">
+            <i class="fa-solid fa-quote-left"></i>
+            <span id="quote">Quote</span>
+            <i class="fa-solid fa-quote-right"></i>
 
-      <h2 class="quote">
-        <i class="fa fa-quote-left" ></i>
-        <span id="quote" >Quote</span>
-        <i class="fa fa-quote-right"></i>
-      </h1>
-
-      <p id="author" class="author">~ Author</p>
-
+        </h2>
+        <p class="author" id="author">~ Author</p>
         <button class="btn" id="btn">Get a quote</button>
-      </div>
     </div>
-
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
