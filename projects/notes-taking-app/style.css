@@ -1,30 +1,25 @@
-:root {
-  --bg: #19172e;
-  --btn: #9c528b;
-  --card: #b9929f;
-}
-* {
-  font-family: sans-serif;
-  transition: 0.5s ease;
-}
 body {
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
-  background: var(--bg);
+  background: linear-gradient(to left, lightblue, lightgreen);
 }
 
-h1 {
-  color: #fff;
+.heading {
+  color: aliceblue;
   text-align: center;
-  left: 0;
-  right: 0;
-  top: 0;
   padding-top: 10px;
-  font-size: 2rem !important;
+  font-size: 35px;
+}
+.info-text {
+  text-align: center;
+  color: aliceblue;
+  font-size: 18px;
 }
 
-#app {
+.app {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
   padding: 50px;
   gap: 40px;
 }
@@ -35,51 +30,40 @@ h1 {
   padding: 17px;
   border-radius: 15px;
   resize: none;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   font-family: monospace;
   font-size: 18px;
-  color: var(--bg);
+  color: gray;
   font-weight: 800;
   border: none;
   outline: none;
-  background: var(--card);
+  background: rgba(255, 255, 255, 0.1);
+}
+.note::placeholder {
+  color: gray;
+  opacity: 30%;
 }
 
-.add-note {
+.note:hover,
+.note:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
+
+.btn {
   height: 200px;
   border: none;
   outline: none;
-  background: rgba(156, 82, 139, 0.27);
+  background: rgba(255, 255, 255, 0.27);
   border-radius: 15px;
   font-size: 70px;
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
-.add-note:hover {
-  background: rgba(156, 82, 139, 0.5);
-  color: rgba(0, 0, 0, 0.7);
-}
-
-::placeholder {
-  color: rgb(214, 214, 214);
-}
-
-footer,
-a {
-  color: rgb(214, 214, 214);
-  font-size: 20px;
-}
-
-footer {
-    text-align: center;
-    color: white;
-    font-size: 1.25rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    padding: 10px;
-    line-height: 4vh;
+.btn:hover {
+  background: rgba(255, 255, 255, 0.55);
+  color: rgba(0, 0, 0, 0.6);
+  transition: all 300ms ease;
 }
