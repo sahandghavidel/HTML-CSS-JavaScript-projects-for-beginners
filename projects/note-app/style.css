@@ -5,14 +5,14 @@ body {
 }
 
 .heading {
-  color: aliceblue;
+  color: darkblue;
   text-align: center;
   padding-top: 10px;
   font-size: 35px;
 }
 .info-text {
   text-align: center;
-  color: aliceblue;
+  color: darkblue;
   font-size: 18px;
 }
 
@@ -26,18 +26,18 @@ body {
 
 .note {
   height: 200px;
-  box-sizing: border-box;
   padding: 17px;
   border-radius: 15px;
   resize: none;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   font-family: monospace;
   font-size: 18px;
-  color: gray;
+  color: darkblue;
   font-weight: 800;
   border: none;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
 }
 .note::placeholder {
   color: gray;
@@ -52,8 +52,7 @@ body {
 
 .btn {
   height: 200px;
-  border: none;
-  outline: none;
+  border-color: rgba(255, 255, 255, 0.37);
   background: rgba(255, 255, 255, 0.27);
   border-radius: 15px;
   font-size: 70px;
