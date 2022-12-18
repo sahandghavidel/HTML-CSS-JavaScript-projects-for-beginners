@@ -1,7 +1,7 @@
 body {
-  font-family: "Courier New", Courier, monospace;
   margin: 0;
   background: linear-gradient(to left, lightblue, lightgreen);
+  font-family: "Courier New", Courier, monospace;
 }
 
 .heading {
@@ -10,6 +10,7 @@ body {
   padding-top: 10px;
   font-size: 35px;
 }
+
 .info-text {
   text-align: center;
   color: darkblue;
@@ -19,26 +20,25 @@ body {
 .app {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
   justify-content: center;
   padding: 50px;
-  gap: 40px;
 }
 
 .note {
-  height: 200px;
   padding: 17px;
   border-radius: 15px;
   resize: none;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-  font-family: monospace;
   font-size: 18px;
+  height: 200px;
   color: darkblue;
-  font-weight: 800;
   border: none;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
 }
+
 .note::placeholder {
   color: gray;
   opacity: 30%;
@@ -50,19 +50,19 @@ body {
   transition: all 300ms ease;
 }
 
-.btn {
-  height: 200px;
-  border-color: rgba(255, 255, 255, 0.37);
-  background: rgba(255, 255, 255, 0.27);
-  border-radius: 15px;
-  font-size: 70px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+.btn{
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-.btn:hover {
-  background: rgba(255, 255, 255, 0.55);
-  color: rgba(0, 0, 0, 0.6);
-  transition: all 300ms ease;
+.btn:hover{
+    background: rgba(255, 255, 255, 0.55);
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 300ms ease;
 }
