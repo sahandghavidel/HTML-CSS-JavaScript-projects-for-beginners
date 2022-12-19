@@ -1,13 +1,14 @@
 const btnEl = document.getElementById("btn");
-const BMIInputEl = document.getElementById("bmi");
+const bmiInputEl = document.getElementById("bmi-result");
 const weightConditionEl = document.getElementById("weight-condition");
 
 function calculateBMI() {
-  const HeightValue = document.getElementById("height").value / 100;
-
+  const heightValue = document.getElementById("height").value / 100;
   const weightValue = document.getElementById("weight").value;
-  const bmiValue = weightValue / (HeightValue * HeightValue);
-  BMIInputEl.value = bmiValue;
+
+  const bmiValue = weightValue / (heightValue * heightValue);
+
+  bmiInputEl.value = bmiValue;
 
   if (bmiValue < 18.5) {
     weightConditionEl.innerText = "Under weight";

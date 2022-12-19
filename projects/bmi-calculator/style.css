@@ -1,53 +1,52 @@
-body {
-  margin: 0;
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to left bottom, lightgreen, lightblue);
-  font-family: "Courier New", Courier, monospace;
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.container {
-  background: rgba(255, 255, 255, 0.3);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  text-align: start;
-  margin: 5px;
+.container{
+    background: rgba(255,255,255, .3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.3);
+    margin: 5px;
 }
 
-.heading {
-  font-size: 30px;
+.heading{
+    font-size: 30px;
 }
 
-.input {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: rgba(255, 255, 255, 0.4);
-  border-color: rgba(255, 255, 255, 0.5);
-  margin: 10px;
+.input{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: rgba(255,255,255, .4);
+    border-color: rgba(255,255,255, .5);
+    margin: 10px;
 }
 
-.btn {
-  background-color: lightgreen;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+.btn{
+    background-color: lightgreen;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,.3);
+    cursor: pointer;
 }
 
-.btn:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-  transition: all 300ms ease;
+.btn:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    transition: all 300ms ease;
 }
 
-.info-text {
-  font-size: 20px;
-  font-weight: 500;
+.info-text{
+    font-size: 20px;
+    font-weight: 500;
 }
