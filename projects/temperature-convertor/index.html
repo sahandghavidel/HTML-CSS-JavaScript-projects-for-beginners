@@ -9,42 +9,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="heading">Temperature Convertor</div>
-      <div class="box">
+      <h1 class="heading">Temperature Convertor</h1>
+      <div class="temp-container">
         <label for="celsius">Celsius:</label>
         <input
+          onchange="computeTemp(event)"
           type="number"
           name="celsius"
           id="celsius"
           placeholder="Enter Temperature"
-          class="input_box"
-          onchange="computeTemp(event)"
+          class="input"
         />
       </div>
-      <div class="box">
+      <div class="temp-container">
         <label for="fahrenheit">Fahrenheit:</label>
         <input
+          onchange="computeTemp(event)"
           type="number"
           name="fahrenheit"
           id="fahrenheit"
           placeholder="Enter Temperature"
-          class="input_box"
-          onchange="computeTemp(event)"
+          class="input"
         />
       </div>
-      <div class="box">
+      <div class="temp-container">
         <label for="kelvin">Kelvin:</label>
         <input
+          onchange="computeTemp(event)"
           type="number"
           name="kelvin"
           id="kelvin"
           placeholder="Enter Temperature"
-          class="input_box"
-          onchange="computeTemp(event)"
+          class="input"
         />
       </div>
     </div>
-
     <script src="index.js"></script>
   </body>
 </html>
