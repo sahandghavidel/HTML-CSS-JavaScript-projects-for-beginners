@@ -1,34 +1,28 @@
-const form = document.querySelector('form');
-
+const inputEl = document.getElementById("input");
+const errorEl = document.getElementById("error");
+const resultsEl = document.getElementById("result");
 
 //add an event listener to the form
+let time;
+let errorTime;
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    const input = document.querySelector('input');
-    let results = document.querySelector('span');
-    let poundsToKG;
+function updateResults() {
+  if (inputEl.value <= 0 || isNaN(inputEl.value)) {
+    clearTimeout(errorTime);
+    errorEl.innerText = "Please enter a valid number!";
+    errorTime = setTimeout(function () {
+      errorEl.innerText = "";
+    }, 2000);
+    inputEl.value = "";
+  } else {
+    clearTimeout(time);
 
-    if ((input.value <= 0) || (isNaN(input.value))){
-        results.classList.add('error');
-        results.innerHTML = "<p>Please enter a value number!</p>"
-        setTimeout(function(){
-            results.innerHTML = '';
-            
-            results.classList.remove('error');
-        }, 2000)
-        input.value = '';
-    } else {
-        poundsToKG = Number(input.value) / 2.2;
-        results.classList.add('no-error');
-        results.innerHTML = `${poundsToKG.toFixed(2)}`;
-        setTimeout(function(){
-            results.innerHTML = '';
-            input.value = '';
-            results.classList.remove('no-error');
-        }, 10000)
-        
-    }
-    
-    
-})
+    resultsEl.innerText = (+inputEl.value / 2.2).toFixed(2);
+    time = setTimeout(function () {
+      resultsEl.innerText = "";
+      inputEl.value = "";
+    }, 10000);
+  }
+}
+
+inputEl.addEventListener("input", updateResults);

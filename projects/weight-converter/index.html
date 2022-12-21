@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Weight Conversion</title>
-</head>
-<body>
-    <div>
-        <form>
-            <h1>Weight Converter (pounds to kg)</h1>
-            <p>Enter weight value in pounds:</p>
-            <label>Pounds</label>
-            <input type="number" step=".1">
-            <p>Your weight in Kilograms is: <span id="result"></span></p>
-        </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weight Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Weight Converter</h1>
+      <div class="input-container">
+        <label>Pounds:</label>
+        <input
+          placeholder="Enter number"
+          class="input"
+          type="number"
+          step=".1"
+          id="input"
+        />
+      </div>
+      <p>Your weight in kg is: <span id="result"></span></p>
+      <span id="error" class="error"></span>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

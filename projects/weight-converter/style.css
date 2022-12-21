@@ -1,16 +1,42 @@
-form {
-    background-color: rgb(241, 9, 144);
-    color: white;
-    width: 500px;
-    height: 300px;
-    margin: 100px auto 100px;
-    padding: 25px;
+body {
+  background: linear-gradient(to left top, yellow, lightblue, yellow);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  color: darkcyan;
 }
 
-.error{
-    color: red;
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  width: 85%;
+  max-width: 450px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
-.no-error{
-    color: rgb(6, 48, 2);
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.input {
+  padding: 10px;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  border-radius: 10px;
+  color: darkgreen;
+  outline: none;
+}
+
+.error {
+  color: red;
 }
