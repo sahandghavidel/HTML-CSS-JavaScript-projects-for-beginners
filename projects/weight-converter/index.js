@@ -1,25 +1,21 @@
 const inputEl = document.getElementById("input");
 const errorEl = document.getElementById("error");
-const resultsEl = document.getElementById("result");
-
-//add an event listener to the form
-let time;
+const resultEl = document.getElementById("result");
 let errorTime;
-
+let resultTime;
 function updateResults() {
   if (inputEl.value <= 0 || isNaN(inputEl.value)) {
-    clearTimeout(errorTime);
     errorEl.innerText = "Please enter a valid number!";
-    errorTime = setTimeout(function () {
+    clearTimeout(errorTime);
+    errorTime = setTimeout(() => {
       errorEl.innerText = "";
+      inputEl.value = "";
     }, 2000);
-    inputEl.value = "";
   } else {
-    clearTimeout(time);
-
-    resultsEl.innerText = (+inputEl.value / 2.2).toFixed(2);
-    time = setTimeout(function () {
-      resultsEl.innerText = "";
+    resultEl.innerText = (+inputEl.value / 2.2).toFixed(2);
+    clearTimeout(resultTime);
+    resultTime = setTimeout(() => {
+      resultEl.innerText = "";
       inputEl.value = "";
     }, 10000);
   }

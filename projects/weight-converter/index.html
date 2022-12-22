@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weight Converter</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
-      <h1 class="heading">Weight Converter</h1>
-      <div class="input-container">
-        <label>Pounds:</label>
-        <input
-          placeholder="Enter number"
-          class="input"
-          type="number"
-          step=".1"
-          id="input"
-        />
-      </div>
-      <p>Your weight in kg is: <span id="result"></span></p>
-      <span id="error" class="error"></span>
+        <h1 class="heading">Weight Converter</h1>
+        <div class="input-container">
+            <label for="pounds">Pounds:</label>
+            <input type="number" id="input" class="input" step=".1" placeholder="Enter number">
+        </div>
+        <p>Your weight in kg is: <span id="result"></span></p>
+        <p class="error" id="error"></p>
     </div>
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
