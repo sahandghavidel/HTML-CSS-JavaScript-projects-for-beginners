@@ -1,79 +1,48 @@
-* {
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "sans";
-}
-
-@font-face {
-  font-family: "sans";
-  src: url(font/sans.ttf);
-}
-
 body {
-  overflow: hidden;
-  background: #19172e;
-  color: #fff;
+  margin: 0;
+  background: lightcyan;
+  color: darkgreen;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: monospace;
 }
 
-footer, a, h3,small {
-  color: #fff;
-}
-
-h1 {
-  color: #fff;
+.heading {
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding-top: 10px;
+  margin: 5px;
+  font-size: 30px;
 }
 
-.box {
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  backdrop-filter: blur(20px);
-  padding: 1rem;
-  width: 400px;
-  text-align: center;
-}
-
-.panel-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 30px;
+  padding: 20px;
   max-width: 400px;
-}
-
-.panel-container strong {
-  line-height: 20px;
+  width: 85%;
+  text-align: center;
+  font-size: 20px;
 }
 
 .ratings-container {
   display: flex;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .rating {
-  flex: 1;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
   margin: 10px 5px;
 }
 
 .rating:hover,
 .rating.active {
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  background: salmon;
+  background: darkseagreen;
+  transition: all 300ms ease;
 }
 
 .rating img {
@@ -81,40 +50,30 @@ h1 {
 }
 
 .rating small {
-  display: inline-block;
-  margin: 10px 0 0;
+  margin: 5px 0;
+  font-size: 18px;
 }
 
 .rating:hover small,
 .rating.active small {
-  color: green;
+  color: aliceblue;
 }
 
 .btn {
-  background-color: #302d2b;
+  background-color: darkcyan;
   color: #fff;
   border: 0;
+  margin: 10px;
   border-radius: 4px;
   padding: 12px 30px;
   cursor: pointer;
 }
 
-.btn:focus {
-  outline: 0;
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
 }
 
 .btn:active {
-  transform: scale(0.98);
-}
-
-.fa-heart {
-  color: red;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-footer {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
+  transform: scale(0.96);
 }
