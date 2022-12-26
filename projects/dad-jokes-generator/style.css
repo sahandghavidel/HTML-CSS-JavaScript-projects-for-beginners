@@ -1,54 +1,52 @@
-body {
-  margin: 0;
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-family: monospace;
-  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+body{
+    margin: 0;
+    background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
 }
 
-.container {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  border-radius: 15px;
-  width: 85%;
-  text-align: center;
-  color: darkgreen;
+.container{
+    background-color: rgba(255,255,255,.3);
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.3);
+    border-radius: 15px;
+    width: 85%;
+    text-align: center;
+    color: darkgreen;
 }
 
-.heading {
-  font-size: 35px;
-  font-weight: 200;
-  font-family: Impact;
-  letter-spacing: 2px;
-
-  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+.heading{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 2px rgba(0,0,0,.3);
+    letter-spacing: 2px;
 }
 
-.joke {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 40px;
+.joke{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px
 }
 
-.btn {
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 10px;
-  margin-top: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  width: 300px;
-  color: darkgreen;
+.btn{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255,255,255,.3);
+    border-color: rgba(255,255,255,.6);
+    text-transform: uppercase;
+    width: 300px;
+    color: darkgreen;
 }
 
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  transition: all 300ms ease;
+.btn:hover{
+    background-color: rgba(255,255,255,.5);
+    box-shadow: 0 4px 4px rgba(0,0,0,.3);
+    transition: all 300ms ease;
 }
