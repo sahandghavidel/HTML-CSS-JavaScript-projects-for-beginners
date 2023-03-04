@@ -1,117 +1,94 @@
 body {
-  margin: 0; /* Reset default margin */
-  font-family: "Montserrat", sans-serif; /* Use Montserrat font for all text */
-  background-color: #f7f7f7; /* Set light gray background color */
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
 }
 
 .container {
-  max-width: 600px; /* Set maximum width of container */
-  margin: 0 auto; /* Center container horizontally */
-  padding: 20px; /* Add padding inside container */
-  border-radius: 5px; /* Add rounded corners to container */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow effect to container */
-  background-color: #fff; /* Set white background color for container */
-  margin-top: 50px; /* Add margin to the top of the container */
-  text-align: center; /* Center align the content inside container */
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  max-width: 600px;
+  border-radius: 5px;
+  padding: 20px;
 }
 
 form {
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center children horizontally */
-  align-items: center; /* Center children vertically */
-  margin-bottom: 20px; /* Add margin to bottom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 form input[type="text"] {
-  padding: 10px; /* Add padding to all sides */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add rounded corners */
-  font-size: 18px; /* Set font size */
-  width: 60%; /* Set width */
-  outline: none; /* Remove outline */
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 60%;
 }
 
 form input[type="submit"] {
-  background-color: #007bff; /* set background color for the submit button */
-  color: #fff; /* set text color for the submit button */
-  border: none; /* remove border from the submit button */
-  padding: 10px 20px; /* set padding for the submit button */
-  border-radius: 5px; /* set border radius for the submit button */
-  font-size: 18px; /* set font size for the submit button text */
-  cursor: pointer; /* change cursor to pointer on hover */
-  outline: none; /* remove outline on focus */
-  transition: background-color 0.3s ease; /* add transition effect for background color change */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-  background-color: #0062cc; /* set background color on hover */
+  background-color: #0062cc;
 }
 
-.icon {
-  width: 100px; /* set width of the icon */
-  height: 100px; /* set height of the icon */
-  margin: 0 auto; /* center the icon horizontally */
-  background-size: contain; /* scale the background image to fit within the container */
-  background-repeat: no-repeat; /* prevent the background image from repeating */
-  background-position: center center; /* center the background image within the container */
+.icon img {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .temperature {
-  font-size: 48px; /* set font size for the temperature display */
-  font-weight: bold; /* set font weight for the temperature display */
-  margin: 20px 0; /* add margin to the top and bottom of the temperature display */
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
-.description {
-  font-size: 24px; /* set font size for the weather description */
-  margin-bottom: 20px; /* add margin to the bottom of the weather description */
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.details {
-  display: flex; /* set display property to flex */
-  justify-content: center; /* center the child elements horizontally */
-  align-items: center; /* center the child elements vertically */
-  flex-wrap: wrap; /* allow the child elements to wrap onto a new line if needed */
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.details > div {
-  flex: 1; /* Use the remaining available space for each div */
-  margin: 10px; /* Add margin around each div */
-  padding: 20px; /* Add padding inside each div */
-  background-color: #f1f1f1; /* Set background color for each div */
-  border-radius: 5px; /* Round the corners of each div */
-  text-align: center; /* Center the content horizontally */
-  min-height: 45px; /* Set a minimum height for each div */
-  align-items: center; /* Center the content vertically */
-  justify-content: center; /* Center the content horizontally */
+.details > div{
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
 }
 
-.details > div > h3 {
-  margin-top: 0; /* Remove the top margin of the heading */
-  font-size: 18px; /* Set the font size for the heading */
-  font-weight: bold; /* Set the font weight for the heading */
-}
+@media (max-width: 768px){
+    form {
+        flex-direction: column;
+    }
 
-.details > div > p {
-  margin-bottom: 0; /* Remove the bottom margin of the paragraph */
-  font-size: 16px; /* Set the font size for the paragraph */
-}
-
-.details > div > p:first-child {
-  font-weight: bold; /* Set the font weight for the first paragraph */
-}
-
-.details > div > p:last-child {
-  margin-top: 10px; /* Add margin to the top of the last paragraph */
-}
-
-@media (max-width: 768px) {
-  form {
-    flex-direction: column; /* Change the direction of the flex items to column */
-  }
-
-  form input[type="text"] {
-    width: 100%; /* Set the width of the input field to 100% */
-    margin-bottom: 10px; /* Add margin to the bottom of the input field */
-  }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

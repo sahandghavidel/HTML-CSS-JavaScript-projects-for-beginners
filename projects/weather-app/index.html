@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -9,30 +11,22 @@
     <div class="container">
       <h1>Weather App</h1>
       <form>
-        <input type="text" id="city-input" placeholder="Enter city" />
+        <input type="text" id="city-input" placeholder="Enter City" />
         <input type="submit" value="Get Weather" />
       </form>
       <div id="weather-data">
-        <div class="icon"></div>
+        <div class="icon">
+          <!-- <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon"> -->
+        </div>
         <div class="temperature"></div>
         <div class="description"></div>
-        <div class="details"></div>
+        <div class="details">
+          <!-- <div>Feels like: 23°C</div>
+                <div>Humidity: 40%</div>
+                <div>Wind speed: 5 m/s</div> -->
+        </div>
       </div>
-
-      <!-- <div id="weather-data">
-                <div class="icon">
-                    <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
-                </div>
-                <div class="temperature">22°C</div>
-                <div class="description">Sunny</div>
-                <div class="details">
-                    <div>Feels like: 23°C</div>
-                    <div>Humidity: 40%</div>
-                    <div>Wind speed: 5 m/s</div>
-                </div>
-            </div>
-        -->
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
