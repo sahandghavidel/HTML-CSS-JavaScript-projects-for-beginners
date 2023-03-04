@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Music Player</h1>
+      <div class="player">
+        <audio id="player" src="" controls></audio>
+        <div class="player__controls">
+          <button class="player__button player__button--play"></button>
+          <button class="player__button player__button--pause"></button>
+        </div>
+        <div class="player__progress">
+          <div class="player__progress-bar"></div>
+        </div>
+      </div>
+      <ul class="playlist">
+        <li class="playlist__item">
+          <a href="#" data-src="songs/song1.m4a">Song 1</a>
+        </li>
+        <li class="playlist__item">
+          <a href="#" data-src="songs/song2.m4a">Song 2</a>
+        </li>
+        <li class="playlist__item">
+          <a href="#" data-src="songs/song3.m4a">Song 3</a>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
