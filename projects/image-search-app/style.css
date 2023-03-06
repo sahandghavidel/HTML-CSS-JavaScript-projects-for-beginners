@@ -1,170 +1,125 @@
 body {
-  background-color: #f9f9f9; /* Sets the background color of the body element to a light gray */
-  font-family: Arial, sans-serif; /* Sets the font family of the text inside the body to Arial or a generic sans-serif font */
-  font-size: 16px; /* Sets the font size of the text inside the body to 16 pixels */
-  line-height: 1.6; /* Sets the line height of the text inside the body to 1.6 times the font size */
-  color: #333; /* Sets the color of the text inside the body to a dark gray */
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
 }
 
 h1 {
-  font-size: 36px; /* Sets the font size of the h1 heading to 36 pixels */
-  font-weight: bold; /* Makes the h1 heading bold */
-  text-align: center; /* Centers the h1 heading horizontally within its container */
-  margin-top: 40px; /* Adds a top margin of 40 pixels to the h1 heading */
-  margin-bottom: 60px; /* Adds a bottom margin of 60 pixels to the h1 heading */
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-#search-form {
-  display: flex; /* Set the display property of the element to flex */
-  justify-content: center; /* Center the child elements horizontally */
-  align-items: center; /* Center the child elements vertically */
-  margin-bottom: 60px; /* Add a bottom margin of 60 pixels to the element */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 #search-input {
-  width: 60%; /* Set the width of the element to 60% of its container */
-  max-width: 400px; /* Set the maximum width of the element to 400 pixels */
-  padding: 10px 20px; /* Add 10 pixels of padding to the top and bottom and 20 pixels of padding to the left and right of the element */
-  border: none; /* Remove the border from the element */
-  border-radius: 5px; /* Add a 5-pixel radius to the element's border corners */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a 5-pixel box shadow to the element */
-  font-size: 18px; /* Set the font size of the element to 18 pixels */
-  color: #333; /* Set the text color of the element to #333 */
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
 }
 
 #search-button {
-  padding: 10px 20px; /* Sets the padding of the button */
-  background-color: #4caf50; /* Sets the background color of the button */
-  color: white; /* Sets the text color of the button */
-  font-size: 18px; /* Sets the font size of the button text */
-  border: none; /* Removes the border of the button */
-  border-radius: 5px; /* Sets the border radius of the button */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sets the box shadow of the button */
-  cursor: pointer; /* Changes the cursor to pointer when hovering over the button */
-  transition: background-color 0.3s ease-in-out; /* Sets the transition effect when the background color changes */
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 #search-button:hover {
-  background-color: #3e8e41; /* Changes the background color when hovering over the button */
+  background-color: #3e8e41;
 }
 
-#search-results {
-  display: flex; /* sets the display type of the element to flex*/
-  flex-wrap: wrap; /* allows the flex items to wrap to multiple lines*/
-  justify-content: space-between; /* aligns the flex items along the main axis with equal spacing between them*/
-  margin: 0 auto; /* sets the top and bottom margins to 0 and the left and right margins to auto*/
-  max-width: 1200px; /* sets the maximum width of the element to 1200 pixels*/
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Sets the styles for an individual search result element */
 .search-result {
-  /* Adds 60px margin to the bottom of each search result element */
   margin-bottom: 60px;
-
-  /* Sets the width of the search result element to 30% of the parent container */
   width: 30%;
-
-  /* Adds rounded corners to the search result element */
   border-radius: 5px;
-
-  /* Adds a box shadow to the search result element */
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-
-  /* Hides any content that overflows the search result element */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-}
-
-.search-result img {
-  /* Sets the width of the image to 100% of its container element */
-  width: 100%;
-
-  /* Sets the height of the image to 200 pixels */
-  height: 200px;
-
-  /* Determines how the image should be resized to cover its container without distorting its aspect ratio */
-  object-fit: cover;
-
-  /* Specifies that any changes to the transform property of the image should be transitioned over a duration of 0.3 seconds with an easing function */
-  transition: transform 0.3s ease-in-out;
 }
 
 .search-result:hover img {
   transform: scale(1.05);
-  /* The transform property scales the image by 1.05, making it 5% larger than its original size. This creates a zoom effect when the user hovers over the image. */
 }
 
+.search-result img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
 .search-result a {
-  display: block; /* sets the display type to block */
-  padding: 10px; /* adds padding to the top and bottom of the element */
-  color: #333; /* sets the text color to dark gray */
-  text-decoration: none; /* removes any text decoration */
-  transition: background-color 0.3s ease-in-out; /* sets a transition effect when the background color changes */
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.search-result a:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.1
-  ); /* changes the background color to a light gray when the element is hovered over */
+.search-result:hover a {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #show-more-button {
-  background-color: #008cba; /* Sets the background color of the button to a shade of blue */
-  border: none; /* Removes the border around the button */
-  color: white; /* Sets the font color of the button text to white */
-  padding: 10px 20px; /* Sets the padding of the button to 10px on the top and bottom, and 20px on the left and right */
-  text-align: center; /* Centers the button text horizontally */
-  text-decoration: none; /* Removes any text decoration such as underlining */
-  display: inline-block; /* Displays the button as an inline-level block container */
-  font-size: 16px; /* Sets the font size of the button text to 16px */
-  border-radius: 5px; /* Rounds the corners of the button to 5px */
-  margin-top: 20px; /* Adds a 20px margin on the top of the button */
-  transition: background-color 0.3s ease; /* Specifies a transition effect for the background color when hovering over the button */
-  display: none; /* Hides the button */
-  margin: 0 auto; /* Centers the button horizontally */
-  margin-bottom: 40px; /* Adds a 40px margin on the bottom of the button */
-  cursor: pointer; /* Sets the cursor to a pointer when hovering over the button */
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: none;
 }
 
 #show-more-button:hover {
-  background-color: #0077b5; /* Changes the background color of the button to a darker shade of blue when hovering over it */
+  background-color: #0077b5;
 }
 
-/* This is a CSS media query, which applies different styles based on the size of the screen.
-
-The first media query applies when the screen width is a maximum of 768px. In this case, it changes the justify-content property of #search-results to center the search results horizontally. It also changes the width of .search-result to 45%.
-
-The second media query applies when the screen width is a maximum of 480px. In this case, it changes the flex-direction property of #search-form to column, which stacks the search input and button vertically. It also adds a margin bottom to #search-input and changes the width of .search-result to 100%, making each search result take up the full width of the screen. */
-
-/* The following styles will apply when the screen size is 768px or smaller */
 @media screen and (max-width: 768px) {
-  /* Centers the search result items */
-  #search-results {
-    justify-content: center;
-  }
-
-  /* Decreases the width of each search result item */
   .search-result {
     width: 45%;
   }
 }
-
-/* The following styles will apply when the screen size is 480px or smaller */
 @media screen and (max-width: 480px) {
-  /* Changes the direction of the search form to be vertical */
-  #search-form {
+  .search-result {
+    width: 100%;
+  }
+
+  form {
     flex-direction: column;
   }
 
-  /* Adds margin to the bottom of the search input */
   #search-input {
     margin-bottom: 20px;
-  }
-
-  /* Makes each search result item full width */
-  .search-result {
-    width: 100%;
+    width: 85%;
   }
 }
