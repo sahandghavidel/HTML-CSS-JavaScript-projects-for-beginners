@@ -1,82 +1,68 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
-
-/* By setting box-sizing: border-box on all elements, we are ensuring that any padding or border we add to an element will be included in its total size. */
 
 .calculator {
+  background-color: #f2f2f2;
+  padding: 20px;
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: solid 1px #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-#result {
-  width: 100%;
-  padding: 10px;
-  font-size: 24px;
-  border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
-
-  /* In this case, the box-shadow property is set to 0 2px 5px rgba(0, 0, 0, 0.3) inset. This means that the shadow will have no horizontal offset (0), a vertical offset of 2px, a blur radius of 5px, and a color of rgba(0, 0, 0, 0.3). The inset keyword is used to specify that the shadow should be an inset shadow, rather than an outset shadow. */
+  margin-top: 40px;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* grid-template-columns: repeat(4, 1fr) is a CSS property that sets the size of each column in a grid container. In this case, the repeat(4, 1fr) value creates a grid with four equal-sized columns.
-
-The fr unit stands for "fractional unit" and is used to divide the available space in a grid container. In this case, each column takes up an equal fraction of the available space, regardless of the size of the container.
-
-So, with grid-template-columns: repeat(4, 1fr), the grid container will be divided into four equal-sized columns, which is what we want for our calculator layout. */
-  grid-gap: 10px;
-  margin-top: 20px;
+#result{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
 }
 
-button {
-  padding: 10px;
-  font-size: 24px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
 }
 
-button:hover {
-  background-color: #ddd;
+button{
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
 }
 
-.clear {
-  background-color: #ff4136;
-  color: #fff;
+button:hover{
+    background-color: #ddd;
 }
 
-.operator {
-  background-color: #0074d9;
-  color: #fff;
+.clear{
+    background-color: #ff4136;
+    color: #fff;
 }
 
-.number {
-  background-color: #fff;
-  color: #333;
+.number, .decimal{
+    background-color: #fff;
+    color: #333;
+
 }
 
-.equals {
-  grid-row: span 3;
-  /* grid-row: span 3; is a CSS property that sets the number of rows an element spans in a CSS grid container.
-
-In this case, span 3 is used to make the element span three rows in the grid container.  */
-  background-color: #01ff70;
-  color: #fff;
+.operator{
+    background-color: #0074d9;
+    color: #fff;
 }
 
-.decimal {
-  background-color: #fff;
-  color: #333;
+.equals{
+    background-color: #01ff70;
+    grid-row: span 3;
+    color: #fff;
 }
