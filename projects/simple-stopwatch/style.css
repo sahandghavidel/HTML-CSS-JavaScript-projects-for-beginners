@@ -54,3 +54,24 @@ button[disabled] {
   opacity: 0.5;
   cursor: default;
 }
+
+/* add media query */
+
+@media (max-width: 800px) {
+  #timer {
+    font-size: 4rem;
+    width: 350px;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+}
+
+
+
+
+/* add media query for tablet size */
+
