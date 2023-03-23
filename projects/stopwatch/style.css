@@ -4,17 +4,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+  align-items: center;
 }
 
 #timer {
   font-size: 7rem;
   font-weight: 700;
-  color: #f92672;
   text-shadow: 2px 2px #f8a5c2;
-  /* In the current code, the value 2px 2px #f8a5c2 sets a shadow that is 2 pixels to the right and 2 pixels down of the text, with a blur radius of 0 (no blur), and a color of #f8a5c2. */
+  color: #f92672;
   width: 600px;
   text-align: center;
   margin: 40px auto;
@@ -29,15 +28,14 @@ button {
   background-color: #f92672;
   color: white;
   border: none;
-  border-radius: 30px;
   font-size: 2rem;
   font-weight: bold;
   padding: 1.5rem 4rem;
-  /* In the current code, the value 1.5rem 4rem sets a padding of 1.5rem (24px) for the top and bottom sides of the buttons, and 4rem (64px) for the left and right sides of the buttons. */
   margin: 1rem;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.2s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
 }
 
 button:hover {
@@ -45,17 +43,10 @@ button:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-button:active {
-  background-color: #f34282;
-  box-shadow: none;
-}
-
 button[disabled] {
   opacity: 0.5;
   cursor: default;
 }
-
-/* add media query */
 
 @media (max-width: 800px) {
   #timer {
@@ -67,11 +58,4 @@ button[disabled] {
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
-
 }
-
-
-
-
-/* add media query for tablet size */
-
