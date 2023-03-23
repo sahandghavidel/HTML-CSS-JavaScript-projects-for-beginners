@@ -11,7 +11,7 @@ body {
 h1 {
   font-size: 100px;
   color: aliceblue;
-  backdrop-filter: brightness(0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   letter-spacing: 4px;
 }
 
