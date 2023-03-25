@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #f1f1f1;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -16,9 +12,10 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .buttons {
@@ -28,12 +25,11 @@ p {
 
 button {
   border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
   font-size: 3rem;
   margin: 0 0.5rem;
   padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -42,34 +38,21 @@ button:hover {
 }
 
 #rock {
-  background-color: #f44336; /* Red */
+  background-color: #ff0000;
 }
 
 #paper {
-  background-color: #2196f3; /* Blue */
+  background-color: #2196f3;
 }
 
 #scissors {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
 }
 
-#result {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 1rem 0;
-}
-
-#scores {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-#player-score {
-  color: #4caf50;
-  margin-right: 0.5rem;
+#user-score {
+  color: #2196f3;
 }
 
 #computer-score {
-  color: #f44336;
+  color: #ff0000;
 }
