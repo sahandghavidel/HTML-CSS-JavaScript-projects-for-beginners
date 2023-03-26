@@ -1,11 +1,9 @@
-/* Pomodoro Timer styles */
-
 .container {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 400px;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
@@ -19,44 +17,31 @@
   color: #2c3e50;
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-}
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
 
-.button {
   border: none;
   border-radius: 4px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 10px;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  transition: all 0.2s;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.button--start {
+button:hover {
+  opacity: 0.7;
+}
+
+#start {
   background-color: #27ae60;
 }
 
-.button--start:hover {
-  background-color: #229954;
-}
-
-.button--stop {
+#stop {
   background-color: #c0392b;
 }
 
-.button--stop:hover {
-  background-color: #a93226;
-}
-
-.button--reset {
+#reset {
   background-color: #7f8c8d;
-}
-
-.button--reset:hover {
-  background-color: #6c7a7d;
 }
