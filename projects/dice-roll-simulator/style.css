@@ -24,6 +24,7 @@ h1 {
   0% {
     transform: rotateY(0deg) rotateX(0deg);
   }
+
   100% {
     transform: rotateY(720deg) rotateX(720deg);
   }
@@ -33,9 +34,8 @@ button {
   background-color: #47a5c4;
   color: white;
   font-size: 1.5rem;
-  border: none;
   padding: 1rem 2rem;
-  margin: 5px;
+  border: none;
   border-radius: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -48,9 +48,8 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin: 2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 li {
