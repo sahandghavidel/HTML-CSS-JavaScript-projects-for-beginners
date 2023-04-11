@@ -1,31 +1,27 @@
-/* Set body styles */
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #f2f2f2;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
-/* Set container styles */
 .container {
-  margin: 100px auto;
+  background-color: white;
   max-width: 600px;
+  margin: 100px auto;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
   border-radius: 10px;
 }
 
-/* Set heading styles */
 h1 {
   margin-top: 0;
   text-align: center;
 }
 
-/* Set input styles */
-input[type="number"] {
+input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -33,23 +29,23 @@ input[type="number"] {
   width: 100%;
 }
 
-/* Set button styles */
 button {
   background-color: #4caf50;
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   margin: 10px 0;
   width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-/* Set result styles */
 #total {
   font-size: 24px;
   font-weight: bold;

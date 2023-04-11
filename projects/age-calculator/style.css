@@ -1,20 +1,18 @@
-/* General styles */
 body {
   margin: 0;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   background-color: #f7f7f7;
 }
 
 .container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -35,24 +33,23 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="date"] {
+input {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   width: 100%;
   max-width: 300px;
-  box-sizing: border-box;
 }
 
 button {
   background-color: #007bff;
-  color: #fff;
+  color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -63,5 +60,4 @@ button:hover {
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
 }
