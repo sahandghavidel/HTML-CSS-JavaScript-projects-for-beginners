@@ -1,18 +1,26 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   padding: 20px;
   font-family: "Montserrat", sans-serif;
-  background-color: #f7f7f7;
+  /* background-color: #f7; */
+  background-image: radial-gradient( circle , red , blue , green ,yellow ,  white );
 }
 
 .container {
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(205, 60, 60);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 3px 5px red, -1em 0 .4em rgb(221, 221, 73);
   padding: 20px;
   max-width: 600px;
   margin: 0 auto;
   border-radius: 5px;
   margin-top: 50px;
+  height: 50vh;
+  color: white;
 }
 
 h1 {
@@ -40,7 +48,6 @@ input {
   width: 100%;
   max-width: 300px;
 }
-
 button {
   background-color: #007bff;
   color: white;
@@ -53,8 +60,10 @@ button {
 }
 
 button:hover {
-  background-color: #0062cc;
+  background-color: #c9cc00;
+
 }
+
 
 #result {
   margin-top: 20px;

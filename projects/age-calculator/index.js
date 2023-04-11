@@ -3,6 +3,7 @@ const birthdayEl = document.getElementById("birthday");
 const resultEl = document.getElementById("result");
 
 function calculateAge() {
+  
   const birthdayValue = birthdayEl.value;
   if (birthdayValue === "") {
     alert("Please enter your birthday");
