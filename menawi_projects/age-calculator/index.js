@@ -2,6 +2,8 @@ const btnEl = document.getElementById("btn");
 const birthdayEl = document.getElementById("birthday");
 const resultEl = document.getElementById("result");
 
+
+// 👉 This part here is what I need to cement in my brain
 function calculateAge() {
   const birthdayValue = birthdayEl.value;
   if (birthdayValue === "") {
@@ -12,6 +14,8 @@ function calculateAge() {
   }
 }
 
+
+// Confusion is getDate() 
 function getAge(birthdayValue) {
   const currentDate = new Date();
   const birthdayDate = new Date(birthdayValue);
@@ -27,5 +31,6 @@ function getAge(birthdayValue) {
 
   return age;
 }
+// getDate() 👉 get Day
 
 btnEl.addEventListener("click", calculateAge);
