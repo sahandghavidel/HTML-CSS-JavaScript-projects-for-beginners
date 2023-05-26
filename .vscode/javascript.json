@@ -1,0 +1,89 @@
+{
+  "console.log()": {
+    "prefix": "log",
+    "body": "console.log($1);$2",
+    "description": "Logs a message to the console"
+  },
+  "document.getElementById()": {
+    "prefix": "getElementById",
+    "body": "document.getElementById('$1');$2",
+    "description": "Gets an element by its ID"
+  },
+  "Array.isArray()": {
+    "prefix": "isArray",
+    "body": "Array.isArray($1);$2",
+    "description": "Checks if a value is an array"
+  },
+  "Array.prototype.forEach()": {
+    "prefix": "forEach",
+    "body": "$1.forEach(($2) => {$3});$4",
+    "description": "Executes a provided function once for each array element"
+  },
+  "Array.prototype.map()": {
+    "prefix": "map",
+    "body": "$1.map(($2) => {$3});$4",
+    "description": "Creates a new array with the results of calling a provided function on every element"
+  },
+  "Array.prototype.filter()": {
+    "prefix": "filter",
+    "body": "$1.filter(($2) => {$3});$4",
+    "description": "Creates a new array with all elements that pass the test implemented by the provided function"
+  },
+  "Array.prototype.reduce()": {
+    "prefix": "reduce",
+    "body": "$1.reduce(($2, $3) => {$4}, $5);$6",
+    "description": "Applies a function against an accumulator and each element in the array"
+  },
+  "Array.prototype.find()": {
+    "prefix": "find",
+    "body": "$1.find(($2) => {$3});$4",
+    "description": "Returns the first element in the array that satisfies the provided testing function"
+  },
+  "Array.prototype.includes()": {
+    "prefix": "includes",
+    "body": "$1.includes($2);$3",
+    "description": "Determines whether an array includes a certain value"
+  },
+  "String.prototype.length": {
+    "prefix": "length",
+    "body": "$1.length;$2",
+    "description": "Returns the length of a string"
+  },
+  "String.prototype.toUpperCase()": {
+    "prefix": "toUpperCase",
+    "body": "$1.toUpperCase();$2",
+    "description": "Converts a string to uppercase letters"
+  },
+  "String.prototype.toLowerCase()": {
+    "prefix": "toLowerCase",
+    "body": "$1.toLowerCase();$2",
+    "description": "Converts a string to lowercase letters"
+  },
+  "String.prototype.trim()": {
+    "prefix": "trim",
+    "body": "$1.trim();$2",
+    "description": "Removes whitespace from both ends of a string"
+  },
+  "String.prototype.split()": {
+    "prefix": "split",
+    "body": "$1.split('$2');$3",
+    "description": "Splits a string into an array of substrings"
+  },
+  "String.prototype.indexOf()": {
+    "prefix": "indexOf",
+    "body": "$1.indexOf('$2');$3",
+    "description": "Returns the index within the string of the first occurrence of a specified value"
+  },
+  "String.prototype.substring()": {
+    "prefix": "substring",
+    "body": "$1.substring($2);$3",
+    "description": "Returns the part of the string between the start"
+  },
+
+  "querySelector": {
+      "prefix": ".selector",
+      "body": [
+          "body.querySelector('$1');$2",
+      ],
+  }
+}

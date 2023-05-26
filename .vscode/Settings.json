@@ -510,7 +510,7 @@
 	"editor.formatOnPaste": false,
 
 	// Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
-	"editor.formatOnSave": false,
+	"editor.formatOnSave": true,
 
 	// Controls if format on save formats the whole file or only modifications. Only applies when `editor.formatOnSave` is enabled.
 	//  - file: Format the whole file.

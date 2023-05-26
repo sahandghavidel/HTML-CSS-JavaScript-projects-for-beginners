@@ -1,3 +1,5 @@
+// Original file:
+
 const btnEl = document.getElementById("btn");
 const birthdayEl = document.getElementById("birthday");
 const resultEl = document.getElementById("result");
