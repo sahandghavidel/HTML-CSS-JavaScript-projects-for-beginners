@@ -1774,7 +1774,7 @@
   "window.titleSeparator": " — ",
 
   // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
 
   // Configure file associations to languages (for example `"*.extension": "html"`). These have precedence over the default associations of the languages installed.
   "files.associations": {},

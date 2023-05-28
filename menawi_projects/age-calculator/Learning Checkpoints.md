@@ -24,4 +24,7 @@
 
 <!-- --------------Friday, May 26 -->
 
-
+📌 Keys 
+Sunday, May 28 2023
+1. Broke down the function to 3 main conditions
+2. 
