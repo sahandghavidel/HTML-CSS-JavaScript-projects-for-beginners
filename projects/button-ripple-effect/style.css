@@ -1,43 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100vh;
-  align-items: center;
-  background-color: aliceblue;
-  font-family: sans-serif;
-}
-
-.btn {
-  background-color: pink;
-  padding: 20px 40px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  color: black;
-  position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
-.btn span {
+button {
+  background-color: rgb(225, 12, 147);
+  color: #fff;
+  border: 1px rgb(235, 21, 89) solid;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  overflow: hidden;
+  margin: 10px 0;
   position: relative;
-  z-index: 1;
+  border-radius: 4px;
 }
 
-.btn::before {
-  content: "";
+button:focus {
+  outline: none;
+}
+
+button .circle {
   position: absolute;
-  background-color: orangered;
-  width: 0;
-  height: 0;
-  left: var(--xPos);
-  top: var(--yPos);
-  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  transition: width 0.5s, height 0.5s;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
 }
 
-.btn:hover::before {
-  width: 300px;
-  height: 300px;
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
+
