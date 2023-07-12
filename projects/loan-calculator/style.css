@@ -6,6 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(246, 150, 82);
 }
 
 .container{
@@ -24,4 +25,10 @@ body{
 .payment{
     font-weight: 600;
     font-size: 20px;
+}
+.Cen{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
 }

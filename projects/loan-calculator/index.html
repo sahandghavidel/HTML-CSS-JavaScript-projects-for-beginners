@@ -7,20 +7,26 @@
     <title>Loan Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="font-family: 'Times New Roman', Times, serif;">
+    <form action="" id="from">
     <div class="container">
         <h1>Loan Calculator</h1>
         <p>Loan Amount $
-            <input onchange="calculateLoan()" class="input" type="number" id="loan-amount" min="1" max="500000" value="10000">
+            <input  class="input" type="number" id="loan-amount" min="1" max="500000" value="10000">
         </p>
         <p>Interest Rate %
-            <input onchange="calculateLoan()" class="input" type="number" id="interest-rate" min="0" max="100" value="10" step=".1">
+            <input  class="input" type="number" id="interest-rate" min="0" max="100" value="10" step=".1">
         </p>
         <p>Months to pay
-            <input onchange="calculateLoan()" class="input" type="number" id="months-to-pay" min="6" max="48" value="12">
+            <input   class="input" type="number" id="months-to-pay" min="6" max="48" value="12">
         </p>
-        <p class="payment" id="payment">Monthly Payment:</p>
+        <button id="c" class="Cen" onclick="calculateLoan()" style="font-size: 15px; border-radius: 5px;height: 30px;text-align: center;">Calculate</button>
+        <br>
+        <br>
+        
+        <div id="payment"></div>
     </div>
+</form>
 
     <script src="index.js"></script>
 </body>
