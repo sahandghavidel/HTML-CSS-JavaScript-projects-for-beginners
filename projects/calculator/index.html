@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple calculator web application by Gokulakrishnan S">
+  <meta name="keywords" content="calculator, web application, math, arithmetic">
+  <meta name="author" content="Gokulakrishnan S">
+  
+  <!-- Title -->
+  <title>Gokulakrishnan Calculator</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="calculator">
+    <h1>G Calculator</h1>
+    <div class="display">
+      <input type="text" id="display" disabled>
+    </div>
+    <div class="keys">
+      <div class="operators">
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+        <button class="operator" onclick="appendToDisplay('+')">+</button>
+      </div>
+      <div class="numbers">
+        <button class="number" onclick="appendToDisplay('7')">7</button>
+        <button class="number" onclick="appendToDisplay('8')">8</button>
+        <button class="number" onclick="appendToDisplay('9')">9</button>
+        <button class="number" onclick="appendToDisplay('4')">4</button>
+        <button class="number" onclick="appendToDisplay('5')">5</button>
+        <button class="number" onclick="appendToDisplay('6')">6</button>
+        <button class="number" onclick="appendToDisplay('1')">1</button>
+        <button class="number" onclick="appendToDisplay('2')">2</button>
+        <button class="number" onclick="appendToDisplay('3')">3</button>
+        <button class="number" onclick="appendToDisplay('0')">0</button>
+        <button class="number" onclick="appendToDisplay('.')">.</button>
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="calculate" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
