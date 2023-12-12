@@ -1,68 +1,46 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .calculator {
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  border: solid 1px #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  margin-top: 40px;
-}
-
-#result{
-    width: 100%;
-    padding: 10px;
-    font-size: 24px;
-    border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #2c3e50; /* Dark blue-gray background */
+    border: 1px solid #34495e; /* Slightly darker border color */
     border-radius: 5px;
+    padding: 10px;
 }
 
-.buttons{
+#display {
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: #ecf0f1; /* Light gray text color for better contrast */
+    background-color: #34495e; /* Slightly darker blue-gray background */
+    border: 1px solid #2c3e50; /* Matching border color */
+    border-radius: 3px;
+}
+
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin-top: 20px;
+    gap: 5px;
 }
 
-button{
+h1 {
+    text-align: center;
+    color: #2b0b11; /* Light gray text color for the heading */
+}
+
+button {
+    width: 100%;
     padding: 10px;
-    font-size: 24px;
+    font-size: 20px;
+    background-color: #3498db; /* Blue color for buttons */
+    color: #ffffff;
     border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-
 }
 
-button:hover{
-    background-color: #ddd;
-}
-
-.clear{
-    background-color: #ff4136;
-    color: #fff;
-}
-
-.number, .decimal{
-    background-color: #fff;
-    color: #333;
-
-}
-
-.operator{
-    background-color: #0074d9;
-    color: #fff;
-}
-
-.equals{
-    background-color: #01ff70;
-    grid-row: span 3;
-    color: #fff;
+button:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
 }
