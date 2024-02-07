@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     background: linear-gradient(to right, lightblue, yellow);
     display: flex;
@@ -8,7 +8,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
+.container {
     background: aliceblue;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
@@ -18,7 +18,7 @@ body{
     margin: 5px;
 }
 
-.btn{
+.btn {
     background-color: green;
     color: aliceblue;
     padding: 10px 30px;
@@ -29,19 +29,19 @@ body{
 
 }
 
-.btn:disabled{
+.btn:disabled {
     background-color: gray;
     cursor: not-allowed;
 }
 
-.anime-img{
+.anime-img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
     border: 3px solid green;
 }
 
-.anime-name{
+.anime-name {
     margin: 20px;
     background-color: green;
     color: aliceblue;
@@ -51,6 +51,6 @@ body{
     font-weight: 600;
 }
 
-.anime-container{
+.anime-container {
     display: none;
 }
