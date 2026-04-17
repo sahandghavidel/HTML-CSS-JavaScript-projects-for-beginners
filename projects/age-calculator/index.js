@@ -4,9 +4,26 @@ const resultEl = document.getElementById("result");
 
 function calculateAge() {
   const birthdayValue = birthdayEl.value;
+
+  // 🔥 VALIDATION 1: EMPTY CHECK
   if (birthdayValue === "") {
     alert("Please enter your birthday");
-  } else {
+    return;
+  }
+
+  // 🔥 VALIDATION 2: FUTURE DATE BLOCK
+  const selectedDate = new Date(birthdayValue);
+  const today = new Date();
+
+  if (selectedDate > today) {
+    alert("Future date not allowed");
+    return;
+  }
+
+  // ✅ ORIGINAL CODE
+  const age = getAge(birthdayValue);
+  resultEl.innerText = `Your age is ${age} ${age > 1 ? "years" : "year"} old`;
+}
     const age = getAge(birthdayValue);
     resultEl.innerText = `Your age is ${age} ${age > 1 ? "years" : "year"} old`;
   }
