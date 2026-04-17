@@ -20,7 +20,16 @@ function clearResult() {
 }
 
 function calculateResult() {
-  inputFieldEl.value = eval(inputFieldEl.value);
+
+  const expression = inputFieldEl.value;
+
+  // 🔥 VALIDATION: divide by zero detect
+  if (expression.includes("/0")) {
+    alert("Cannot divide by zero");
+    return;
+  }
+
+  inputFieldEl.value = eval(expression);
 }
 
 function appendValue(buttonValue) {
