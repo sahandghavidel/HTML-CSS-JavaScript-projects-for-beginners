@@ -5,6 +5,7 @@ const timerEl = document.getElementById("timer");
 
 let interval;
 let timeLeft = 1500;
+let start = false;
 
 function updateTimer() {
   let minutes = Math.floor(timeLeft / 60);
@@ -17,11 +18,17 @@ function updateTimer() {
 }
 
 function startTimer() {
+  if(start){
+    return;
+  }
+  start = true;
   interval = setInterval(() => {
     timeLeft--;
     updateTimer();
-    if (timeLeft === 0) {
+
+    if (timeLeft <= 0) {
       clearInterval(interval);
+      start = false;
       alert("Time's up!");
       timeLeft = 1500;
       updateTimer();
@@ -30,9 +37,11 @@ function startTimer() {
 }
 function stopTimer() {
   clearInterval(interval);
+  start = false;
 }
 function resetTimer() {
   clearInterval(interval);
+  start = false;
   timeLeft = 1500;
   updateTimer();
 }
