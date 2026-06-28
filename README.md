@@ -13,3 +13,11 @@ This is the source code of the website: <a href="https://100jsprojects.com" styl
   <p style="font-size: 1.1rem; line-height: 1.5; margin-bottom: 20px;">If you have any questions, please feel free to contact me through my email: codewithsahand@gmail.com </p>
   <a href="https://100jsprojects.com"  style="background-color: #1a73e8; color: white; font-weight: bold; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Visit my website</a>
 </div>
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository
+2. Open the project folder
+3. Start the application
