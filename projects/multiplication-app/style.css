@@ -56,3 +56,18 @@ body {
   color: green;
   text-align: right;
 }
+
+.feedback {
+  min-height: 24px;
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback.correct {
+  color: green;
+}
+
+.feedback.wrong {
+  color: red;
+}
